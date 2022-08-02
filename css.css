@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
+}
+
+.calculator {
+  width: 400px;
+
+  padding: 20px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+  margin: 5% auto;
+  position: relative;
+}
+
+.input {
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  height: 79px;
+  padding: 15px;
+  text-align: right;
+  margin-right: 6px;
+  font-size: 2.5rem;
+  overflow-x: auto;
+  transition: all 0.2s ease-in-out;
+  width: 360px;
+  position: relative;
+}
+
+.input:hover {
+  border: 1px solid #bbb;
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.input::after {
+  position: absolute;
+  content: "|";
+  top: 45%;
+  right: 5px;
+  transform: translate(0, -50%);
+  font-size: 30px;
+  animation: app infinite 0.5s ease-in-out alternate;
+  color: rgba(79, 75, 75, 0.696);
+}
+
+@keyframes app {
+  to {
+    opacity: 0;
+  }
+}
+.operators div {
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px 0px 10px 0;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.operators div:hover {
+  background-color: #ddd;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #aaa;
+}
+
+.operators div:active {
+  font-weight: bold;
+}
+
+.leftPanel {
+  display: inline-block;
+}
+
+.numbers div {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.numbers div:hover {
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #bbb;
+}
+
+.numbers div:active {
+  font-weight: bold;
+}
+
+div.equal {
+  width: 80px;
+  display: inline-block;
+  border: 1px solid #3079ed;
+  border-radius: 1px;
+  text-align: center;
+  padding: 48px 10px;
+  margin: 10px 0;
+  vertical-align: top;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4d90fe;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+div.equal:hover {
+  background-color: #307cf9;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #1857bb;
+}
+
+div.equal:active {
+  font-weight: bold;
+}

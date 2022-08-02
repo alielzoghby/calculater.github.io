@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+    <title>Calculater</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="input" id="input"></div>
+      <div class="buttons">
+        <div class="operators numbers">
+          <div data-value="+">+</div>
+          <div data-value="-">-</div>
+          <div data-value="*">&times;</div>
+          <div data-value="/">&divide;</div>
+        </div>
+        <div class="leftPanel">
+          <div class="numbers">
+            <div data-value="7">7</div>
+            <div data-value="8">8</div>
+            <div data-value="9">9</div>
+            <div data-value="**2">■²</div>
+          </div>
+          <div class="numbers">
+            <div data-value="4">4</div>
+            <div data-value="5">5</div>
+            <div data-value="6">6</div>
+            <div style="font-size: 24px" data-value="delete">🠈</div>
+          </div>
+          <div class="numbers">
+            <div data-value="1">1</div>
+            <div data-value="2">2</div>
+            <div data-value="3">3</div>
+          </div>
+
+          <div class="numbers">
+            <div data-value="0">0</div>
+            <div data-value=".">.</div>
+            <div id="clear">C</div>
+          </div>
+          <div class="equal" id="result">=</div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
