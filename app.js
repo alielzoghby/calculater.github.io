@@ -34,7 +34,7 @@ result.addEventListener("click", function () {
     input.innerHTML = "";
   }
 
-  input.textContent = eval(strResult).toFixed(5);
+  input.textContent = eval(strResult).toString().includes(".") ? eval(strResult).toFixed(4) : eval(strResult);
   strResult = "";
   resultDisplayed = false;
 });
